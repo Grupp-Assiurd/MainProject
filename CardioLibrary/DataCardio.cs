@@ -8,12 +8,14 @@ namespace CardioLibrary
     {
         public static string BattitiRiposo(int battito)
         {
+            string risposta = "";
             if (battito < 60)
-                return "Soffri di bradicardia";
+                risposta = "Soffri di bradicardia";
             else if (battito >= 60 && battito <= 100)
-                return "Hai un battito normale";
-            else
-                return "soffri di tachicardia";
+                risposta = "Hai un battito normale";
+            else if(battito > 100)
+                risposta = "soffri di tachicardia";
+            return risposta;
         }
 
         public static double CorsaCamminata(double peso, double km, string corsaCamminata)
