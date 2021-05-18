@@ -62,6 +62,35 @@ namespace DataCardio_Test
             string risposta = DataCardio.btmMaxMin(eta);
             Assert.AreEqual(risultatoAspettato, risposta);
         }
-
+        [DataTestMethod]
+        [DataRow(78, true)]
+        [DataRow(68, true)]
+        [DataRow(61, true)]
+        [DataRow(94, true)]
+        [DataRow(62, true)]
+        [DataRow(78, true)]
+        [DataRow(66, true)]
+        [DataRow(58, false)]
+        [DataRow(88, true)]
+        [DataRow(100, true)]
+        public void BattitiRiposo(int battiti, bool risultato)
+        {
+            bool risposta = DataCardio.BattitiRisposo(battiti);
+            Assert.AreEqual(risultato, risposta);
+        }
+        [DataTestMethod]
+        [DataRow(69.81)]
+        public void MediaGiornaliera(double risultato)
+        {
+            double risposta = DataCardio.LetturafileMediaGiornaliera();
+            Assert.AreEqual(risultato, risposta);
+        }
+        [DataTestMethod]
+        [DataRow(0.358)]
+        public void Variabilit‡Battito(double risultato)
+        {
+            double risposta = DataCardio.Variabilit‡();
+            Assert.AreEqual(risultato, risposta);
+        }
     }
 }
