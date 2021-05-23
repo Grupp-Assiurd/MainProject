@@ -6,6 +6,13 @@ namespace CardioLibrary
 {
     public class DataCardio
     {
+        public static string btmMaxMin(int eta)
+        {
+            int freqMax = 220 - eta;
+            double freqMinAll = (freqMax * 70) / 100;
+            double freqMaxAll = (freqMax * 90) / 100;
+            return ($"{freqMaxAll} {freqMinAll}");
+        }
         public static string BattitiRiposo(int battito)
         {
             if (battito < 60)
@@ -15,19 +22,6 @@ namespace CardioLibrary
             else
                 return "soffri di tachicardia";
         }
-
-        public static double CorsaCamminata(double peso, double km, string corsaCamminata)
-        {
-            double spesaEnergetica = 0;
-            if (corsaCamminata.ToLower() == "corsa")
-                spesaEnergetica = 0.9 * km * peso;
-            else if (corsaCamminata.ToLower() == "camminata")
-                spesaEnergetica = 0.50 * km * peso;
-
-
-            return Math.Round(spesaEnergetica, 2);
-        }
-
         public static double CalorieBruciate(string genere, int f, float p, int a, double t)
         {
             double calcoloTempo = t * 4.184;
@@ -47,12 +41,17 @@ namespace CardioLibrary
             return Math.Round(c, 2);
 
         }
-        public static string btmMaxMin(int eta)
+
+        public static double CorsaCamminata(double peso, double km, string corsaCamminata)
         {
-            int freqMax = 220 - eta;
-            double freqMinAll = (freqMax * 70) / 100;
-            double freqMaxAll = (freqMax * 90) / 100;
-            return ($"{freqMaxAll} {freqMinAll}");
+            double spesaEnergetica = 0;
+            if (corsaCamminata.ToLower() == "corsa")
+                spesaEnergetica = 0.9 * km * peso;
+            else if (corsaCamminata.ToLower() == "camminata")
+                spesaEnergetica = 0.50 * km * peso;
+
+
+            return Math.Round(spesaEnergetica, 2);
         }
         public static double LetturafileMediaGiornaliera()
         {
@@ -69,9 +68,7 @@ namespace CardioLibrary
             }
             return Math.Round(media, 2);
         }
-
-
-        public static bool BattitiRisposo(int battito)
+        public static bool BattitiRiposoFile(int battito)
         {
             Scrivifile();
             using StreamReader sr = new StreamReader("battitiRiposo.txt");
@@ -83,7 +80,6 @@ namespace CardioLibrary
             }
             return false;
         }
-
         private static void Scrivifile()
         {
             StreamWriter w = new StreamWriter("battitiRiposo.txt");
