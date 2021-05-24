@@ -11,7 +11,7 @@ namespace CardioLibrary
             int freqMax = 220 - eta;
             double freqMinAll = (freqMax * 70) / 100;
             double freqMaxAll = (freqMax * 90) / 100;
-            return ($"{freqMaxAll} {freqMinAll}");
+            return ($"Frequenza massima :{freqMaxAll}, Frequenza minima :{freqMinAll}");
         }
         public static string BattitiRiposo(int battito)
         {

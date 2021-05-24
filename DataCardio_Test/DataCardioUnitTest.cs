@@ -7,13 +7,13 @@ namespace DataCardio_Test
     public class DataCardioUnitTest
     {
         [DataTestMethod]
-        [DataRow(10, "189 147")]
-        [DataRow(20, "180 140")]
-        [DataRow(30, "171 133")]
-        [DataRow(40, "162 126")]
-        [DataRow(50, "153 119")]
-        [DataRow(60, "144 112")]
-        [DataRow(70, "135 105")]
+        [DataRow(10, "Frequenza massima :189, Frequenza minima :147")]
+        [DataRow(20, "Frequenza massima :180, Frequenza minima :140")]
+        [DataRow(30, "Frequenza massima :171, Frequenza minima :133")]
+        [DataRow(40, "Frequenza massima :162, Frequenza minima :126")]
+        [DataRow(50, "Frequenza massima :153, Frequenza minima :119")]
+        [DataRow(60, "Frequenza massima :144, Frequenza minima :112")]
+        [DataRow(70, "Frequenza massima :135, Frequenza minima :105")]
 
         public void freqMaxMin(int eta, string risultatoAspettato)
         {
