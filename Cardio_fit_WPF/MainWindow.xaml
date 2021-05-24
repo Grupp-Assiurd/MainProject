@@ -1,0 +1,31 @@
+﻿<Window x:Class="Cardio_fit_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cardio_fit_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Scegli cosa vuoi fare: " HorizontalAlignment="Left" Margin="22,65,0,0" VerticalAlignment="Top" FontSize="20" Height="45" Width="241"/>
+        <Label Content="Cardio Fit" HorizontalAlignment="Left" Margin="302,10,0,0" VerticalAlignment="Top" FontSize="30" Height="45" Width="241"/>
+        <Label Content="-Battiti Massimi e Minimi" HorizontalAlignment="Left" Margin="224,71,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="-Battiti a riposo" HorizontalAlignment="Left" Margin="224,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.503,0.502" FontSize="18"/>
+        <Label Content="-Calorie bruciate" HorizontalAlignment="Left" Margin="224,125,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="-Spesa Energetica" HorizontalAlignment="Left" Margin="224,149,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="-Media Battiti giornaliera" HorizontalAlignment="Left" Margin="224,173,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="-Battiti a riposo" HorizontalAlignment="Left" Margin="224,193,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="-Variabilità dei battiti" HorizontalAlignment="Left" Margin="224,217,0,0" VerticalAlignment="Top" FontSize="18" Height="32"/>
+        <ComboBox x:Name="cbxScelta" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top" Width="296" Height="46" FontSize="20px">
+            <ComboBoxItem>Battiti Massimi e Minimi</ComboBoxItem>
+            <ComboBoxItem>Battiti a riposo</ComboBoxItem>
+            <ComboBoxItem>Calorie bruciate</ComboBoxItem>
+            <ComboBoxItem>Spesa Energetica</ComboBoxItem>
+            <ComboBoxItem>Media Battiti giornaliera</ComboBoxItem>
+            <ComboBoxItem>Battiti a riposo</ComboBoxItem>
+            <ComboBoxItem>Variabilità dei battiti</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Scegli" HorizontalAlignment="Left" Margin="328,339,0,0" VerticalAlignment="Top" Height="35" Width="130" Click="Button_Click"/>
+
+    </Grid>
+</Window>
