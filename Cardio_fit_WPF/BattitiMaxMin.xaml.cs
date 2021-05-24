@@ -30,8 +30,16 @@ namespace Cardio_fit_WPF
                 try
                 {
                     int eta = int.Parse(txtEta.Text);
-                    string freqMaxMin = DataCardio.btmMaxMin(eta);
-                    lblStampa.Content = freqMaxMin;
+                    if (eta <= 0 || eta > 120)
+                    {
+                        MessageBox.Show("Attenzione eta non valida", "Attenzione", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    }
+                    else
+                    {
+                        string freqMaxMin = DataCardio.btmMaxMin(eta);
+                        lblStampa.Content = freqMaxMin;
+                    }
+                   
                 }
                 catch(Exception ex)
                 {
