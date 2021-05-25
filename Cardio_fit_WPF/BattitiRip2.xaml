@@ -1,0 +1,16 @@
+﻿<Window x:Class="Cardio_fit_WPF.BattitiRip2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cardio_fit_WPF"
+        mc:Ignorable="d"
+        Title="BattitiRip2" Height="450" Width="800">
+    <Grid>
+        <Label Content="inserisci un battito da ricercare nel File: " HorizontalAlignment="Left" Margin="74,135,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_battitoDaRicercare" HorizontalAlignment="Left" Margin="329,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_risultatoRicerca" Content="" HorizontalAlignment="Left" Margin="185,217,0,0" VerticalAlignment="Top" Width="455" Height="83" FontFamily="Bernard MT Condensed" FontSize="18"/>
+        <Button x:Name="btn_cerca" Content="cerca battito" HorizontalAlignment="Left" Margin="256,181,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.397,-0.051" Click="btn_cerca_Click"/>
+
+    </Grid>
+</Window>

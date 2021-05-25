@@ -14,7 +14,7 @@
         <Label Content="-Calorie bruciate" HorizontalAlignment="Left" Margin="224,125,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="-Spesa Energetica" HorizontalAlignment="Left" Margin="224,149,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="-Media Battiti giornaliera" HorizontalAlignment="Left" Margin="224,173,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="-Battiti a riposo file" HorizontalAlignment="Left" Margin="224,193,0,0" VerticalAlignment="Top" FontSize="18" Width="198"/>
+        <Label Content="-Battiti a riposo" HorizontalAlignment="Left" Margin="224,193,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="-Variabilità dei battiti" HorizontalAlignment="Left" Margin="224,217,0,0" VerticalAlignment="Top" FontSize="18" Height="32"/>
         <ComboBox x:Name="cbxScelta" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top" Width="296" Height="46" FontSize="20px">
             <ComboBoxItem>Battiti Massimi e Minimi</ComboBoxItem>
