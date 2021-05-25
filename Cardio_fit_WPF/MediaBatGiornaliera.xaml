@@ -5,20 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cardio_fit_WPF"
         mc:Ignorable="d"
-        Title="MediaBatGiornaliera" Height="450" Width="800">
+        Title="MediaBatGiornaliera" Height="374" Width="714" ResizeMode="NoResize">
     <Grid>
-        <Label Content="la media dei battiti giornalieri è:" HorizontalAlignment="Left" Margin="113,156,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lbl_RisultatoMedia" Content="" HorizontalAlignment="Left" Margin="312,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.076,0.579" Width="49">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.957"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Button x:Name="btn_MostraMedia" Content="mostra media" HorizontalAlignment="Left" Margin="248,0,0,0" VerticalAlignment="Center" Click="btn_MostraMedia_Click"/>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="/Sfondo.PNG"/>
+        </Grid.Background>
+        <Label Content="Media Battiti Giornaliera" HorizontalAlignment="Left" Margin="163,34,0,0" VerticalAlignment="Top" FontSize="30" Height="45" Width="347" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="#FF64E5FF"/>
+        <Label Content="la media dei battiti giornalieri è:" HorizontalAlignment="Left" Margin="95,150,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <Label x:Name="lbl_RisultatoMedia" Content="" HorizontalAlignment="Left" Margin="336,151,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.076,0.579" Width="178" FontSize="15" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <Button x:Name="btn_MostraMedia" Content="mostra media" HorizontalAlignment="Center" Margin="0,204,0,0" VerticalAlignment="Top" Click="btn_MostraMedia_Click" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="Black" Background="#FF64E5FF" Height="30" Width="146"/>
+        <Image HorizontalAlignment="Left" Height="183" Margin="500,96,0,0" VerticalAlignment="Top" Width="171" Source="/Cuore_real.PNG"/>
     </Grid>
 </Window>

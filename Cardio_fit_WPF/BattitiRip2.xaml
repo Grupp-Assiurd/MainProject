@@ -5,12 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cardio_fit_WPF"
         mc:Ignorable="d"
-        Title="BattitiRip2" Height="450" Width="800">
+        Title="BattitiRip2"  Height="374" Width="714" ResizeMode="NoResize">
     <Grid>
-        <Label Content="inserisci un battito da ricercare nel File: " HorizontalAlignment="Left" Margin="74,135,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt_battitoDaRicercare" HorizontalAlignment="Left" Margin="329,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lbl_risultatoRicerca" Content="" HorizontalAlignment="Left" Margin="185,217,0,0" VerticalAlignment="Top" Width="455" Height="83" FontFamily="Bernard MT Condensed" FontSize="18"/>
-        <Button x:Name="btn_cerca" Content="cerca battito" HorizontalAlignment="Left" Margin="256,181,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.397,-0.051" Click="btn_cerca_Click"/>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="/Sfondo.PNG"/>
+        </Grid.Background>
+        <Label Content="Battiti a riposo via file" HorizontalAlignment="Left" Margin="200,24,0,0" VerticalAlignment="Top" FontSize="30" Height="45" Width="334" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="#FF64E5FF"/>
+        <Label Content="inserisci un battito da ricercare nel File: " HorizontalAlignment="Left" Margin="74,135,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <TextBox x:Name="txt_battitoDaRicercare" HorizontalAlignment="Left" Margin="357,140,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_risultatoRicerca" Content="" HorizontalAlignment="Center" Margin="0,227,0,0" VerticalAlignment="Top" Width="310" Height="32" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="18"/>
+        <Button x:Name="btn_cerca" Content="cerca battito" FontSize="15" HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.397,-0.051" Click="btn_cerca_Click" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="Black" Background="#FF64E5FF" Height="30" Width="146"/>
+        <Image HorizontalAlignment="Left" Height="183" Margin="495,77,0,0" VerticalAlignment="Top" Width="171" Source="/Cuore_real.PNG"/>
     </Grid>
 </Window>

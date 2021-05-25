@@ -5,14 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cardio_fit_WPF"
         mc:Ignorable="d"
-        Title="BattitiMaxMin" Height="450" Width="800">
+        Title="BattitiMaxMin" Height="374" Width="714" ResizeMode="NoResize">
     <Grid>
-        <TextBox x:Name="txtEta" HorizontalAlignment="Left" Margin="200,101,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="inserisci la tua età:" HorizontalAlignment="Left" Margin="88,97,0,0" VerticalAlignment="Top"/>
-        <Label Content="Battiti Massimi e minimi" HorizontalAlignment="Left" Margin="298,48,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCalcola" Content="Calcola" HorizontalAlignment="Left" Margin="325,149,0,0" VerticalAlignment="Top" Height="35" Width="60" Click="btnCalcola_Click"/>
-        <Label x:Name="lblStampa" Content="" HorizontalAlignment="Left" Margin="250,217,0,0" VerticalAlignment="Top" Height="27" Width="320"/>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="/Sfondo.PNG"/>
+        </Grid.Background>
+        <TextBox x:Name="txtEta" HorizontalAlignment="Left" Margin="295,101,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="15" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <Label Content="inserisci la tua età:" HorizontalAlignment="Left" Margin="137,96,0,0" FontSize="15" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <Label Content="Battiti Massimi e minimi" HorizontalAlignment="Left" Margin="200,24,0,0" VerticalAlignment="Top" FontSize="30" Height="45" Width="347" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="#FF64E5FF"/>
+        <Button x:Name="btnCalcola" Content="Calcola" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="94" Click="btnCalcola_Click" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="Black" Background="#FF64E5FF"/>
+        <Label x:Name="lblStampa" Content="" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Height="27" Width="320" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <Image HorizontalAlignment="Left" Height="183" Margin="484,63,0,0" VerticalAlignment="Top" Width="171" Source="/Cuore_real.PNG"/>
 
     </Grid>
 </Window>

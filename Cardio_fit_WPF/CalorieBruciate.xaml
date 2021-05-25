@@ -5,20 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cardio_fit_WPF"
         mc:Ignorable="d"
-        Title="CalorieBruciate" Height="450" Width="800">
+        Title="CalorieBruciate" Height="374" Width="714" ResizeMode="NoResize">
     <Grid>
-        <TextBox x:Name="txtBattiti" HorizontalAlignment="Left" Margin="344,164,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="inserisci i tuoi battiti:" HorizontalAlignment="Left" Margin="220,160,0,0" VerticalAlignment="Top"/>
-        <Label Content="Calorie Bruciate" HorizontalAlignment="Left" Margin="298,48,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCalcola" Content="Calcola" HorizontalAlignment="Left" Margin="340,231,0,0" VerticalAlignment="Top" Height="35" Width="60" Click="btnCalcola_Click"/>
-        <Label x:Name="lblStampa" Content="" HorizontalAlignment="Left" Margin="280,284,0,0" VerticalAlignment="Top" Height="27" Width="220"/>
-        <RadioButton x:Name="rbtUomo" Content="Uomo" HorizontalAlignment="Left" Margin="270,76,0,0" VerticalAlignment="Top" IsChecked="True"/>
-        <RadioButton x:Name="rbtDonna" Content="Donna" HorizontalAlignment="Left" Margin="341,76,0,0" VerticalAlignment="Top"/>
-        <Label Content="Inserisci il tuo peso:" HorizontalAlignment="Left" Margin="220,129,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPeso" HorizontalAlignment="Left" Margin="344,137,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Inserisci la tua eta:" HorizontalAlignment="Left" Margin="220,103,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtEta" HorizontalAlignment="Left" Margin="344,111,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Inserisci la durata dell'esercizio" HorizontalAlignment="Left" Margin="160,195,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="344,199,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Sfondo.PNG"/>
+        </Grid.Background>
+        <TextBox x:Name="txtBattiti" HorizontalAlignment="Left" Margin="344,165,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Height="18"/>
+        <Label Content="inserisci i tuoi battiti:" HorizontalAlignment="Left" Margin="171,160,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
+        <Label Content="Calorie Bruciate" HorizontalAlignment="Left" Margin="230,26,0,0" VerticalAlignment="Top" FontSize="30" Height="45" Width="348" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="#FF64E5FF"/>
+        <Button x:Name="btnCalcola" Content="Calcola" HorizontalAlignment="Left" Margin="270,239,0,0" VerticalAlignment="Top"  Click="btnCalcola_Click" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="Black" Background="#FF64E5FF" Height="30" Width="146"/>
+        <Label x:Name="lblStampa" Content="" HorizontalAlignment="Left" Margin="244,284,0,0" VerticalAlignment="Top" Height="27" Width="220" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <RadioButton x:Name="rbtUomo" Content="Uomo" HorizontalAlignment="Left" Margin="270,76,0,0" VerticalAlignment="Top" IsChecked="True" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <RadioButton x:Name="rbtDonna" Content="Donna" HorizontalAlignment="Left" Margin="341,76,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <Label Content="Inserisci il tuo peso:" HorizontalAlignment="Left" Margin="182,134,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
+        <TextBox x:Name="txtPeso" HorizontalAlignment="Left" Margin="344,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Height="18"/>
+        <Label Content="Inserisci la tua eta:" HorizontalAlignment="Left" Margin="191,106,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
+        <TextBox x:Name="txtEta" HorizontalAlignment="Left" Margin="344,111,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria"/>
+        <Label Content="Inserisci la durata dell'esercizio:" HorizontalAlignment="Left" Margin="101,189,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
+        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="344,194,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Height="18"/>
+        <Image HorizontalAlignment="Left" Height="183" Margin="514,76,0,0" VerticalAlignment="Top" Width="171" Source="/Cuore_real.PNG"/>
     </Grid>
 </Window>

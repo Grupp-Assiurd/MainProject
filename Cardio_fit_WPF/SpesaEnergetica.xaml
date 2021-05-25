@@ -5,18 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cardio_fit_WPF"
         mc:Ignorable="d"
-        Title="SpesaEnergetica" Height="450" Width="800">
+        Title="SpesaEnergetica" Height="374" Width="714" ResizeMode="NoResize">
     <Grid>
-        <RadioButton x:Name="rdb_camminata" Content="Camminata" HorizontalAlignment="Left" Margin="81,116,0,0" VerticalAlignment="Top" />
-        <RadioButton x:Name="rdb_corsa" Content="Corsa" HorizontalAlignment="Left" Margin="81,148,0,0" VerticalAlignment="Top"/>
-        <Label Content="scegli il tipo di attività" HorizontalAlignment="Left" Margin="81,79,0,0" VerticalAlignment="Top"/>
-        <Label Content="quanti kilometri hai fatto?" HorizontalAlignment="Left" Margin="254,79,0,0" VerticalAlignment="Top" Width="146"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Sfondo.PNG"/>
+        </Grid.Background>
+        <Label Content="Spesa Energetica" HorizontalAlignment="Left" Margin="202,29,0,0" VerticalAlignment="Top" FontSize="30" Height="45" Width="347" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="#FF64E5FF"/>
+        <RadioButton x:Name="rdb_camminata" Content="Camminata" HorizontalAlignment="Left" Margin="81,116,0,0" VerticalAlignment="Top" IsChecked="True" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
+        <RadioButton x:Name="rdb_corsa" Content="Corsa" HorizontalAlignment="Left" Margin="81,148,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
+        <Label Content="scegli il tipo di attività" HorizontalAlignment="Left" Margin="41,79,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
+        <Label Content="quanti kilometri hai fatto?" HorizontalAlignment="Left" Margin="254,79,0,0" VerticalAlignment="Top" Width="181" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
         <TextBox x:Name="txt_Km" HorizontalAlignment="Left" Margin="267,123,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Inserisci il tuo peso" HorizontalAlignment="Left" Margin="476,79,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label Content="Inserisci il tuo peso" HorizontalAlignment="Left" Margin="476,79,0,0" VerticalAlignment="Top" Width="149" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
         <TextBox x:Name="txt_peso" HorizontalAlignment="Left" Margin="489,123,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lbl_risultato" Content="" HorizontalAlignment="Left" Margin="327,188,0,0" VerticalAlignment="Top" Width="103" RenderTransformOrigin="0.88,0.594"/>
-        <Button x:Name="btn_calcola" Content="calcola" HorizontalAlignment="Left" Margin="549,188,0,0" VerticalAlignment="Top" Click="btn_calcola_Click"/>
-        <Label Content="La tua spesa energetica è:" HorizontalAlignment="Left" Margin="169,188,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_risultato" Content="" HorizontalAlignment="Left" Margin="327,191,0,0" VerticalAlignment="Top" Width="153" RenderTransformOrigin="0.88,0.594" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
+        <Button x:Name="btn_calcola" Content="calcola" HorizontalAlignment="Left" Margin="489,187,0,0" VerticalAlignment="Top" Click="btn_calcola_Click" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="Black" Background="#FF64E5FF" Height="30" Width="146"/>
+        <Label Content="La tua spesa energetica è:" HorizontalAlignment="Left" Margin="121,189,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" FontSize="15"/>
+        <Image HorizontalAlignment="Left" Height="134" Margin="309,214,0,0" VerticalAlignment="Top" Width="171" Source="/Cuore_real.PNG"/>
 
     </Grid>
 </Window>

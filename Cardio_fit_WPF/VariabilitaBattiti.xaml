@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cardio_fit_WPF"
         mc:Ignorable="d"
-        Title="VariabilitaBattiti" Height="450" Width="800">
+        Title="VariabilitaBattiti" Height="374" Width="714" ResizeMode="NoResize">
     <Grid>
-        <Label Content="La Variabiltà del battito cardiaco è: " HorizontalAlignment="Left" Margin="115,159,0,0" VerticalAlignment="Top" Width="192"/>
-        <Label x:Name="Lbl_risultatoVariabiltà" Content="" HorizontalAlignment="Left" Margin="340,159,0,0" VerticalAlignment="Top" Width="81"/>
-        <Button x:Name="Btn_MostraVariabiltà" Content="Mostra Variabiltà" HorizontalAlignment="Left" Margin="233,197,0,0" VerticalAlignment="Top" Click="Btn_MostraVariabiltà_Click"/>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="/Sfondo.PNG"/>
+        </Grid.Background>
+        <Label Content="Variabilità battiti" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" FontSize="30" Height="45" Width="346" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="#FF64E5FF"/>
+        <Label Content="La Variabiltà del battito cardiaco è: " HorizontalAlignment="Left" Margin="88,140,0,0" VerticalAlignment="Top" Width="252" FontStyle="Italic" FontFamily="Cambria" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="Lbl_risultatoVariabiltà" Content="" HorizontalAlignment="Left" Margin="357,142,0,0" VerticalAlignment="Top" Width="158" FontStyle="Italic" FontFamily="Cambria" FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="Btn_MostraVariabiltà" Content="Mostra Variabiltà" HorizontalAlignment="Left" Margin="254,194,0,0" VerticalAlignment="Top" Click="Btn_MostraVariabiltà_Click" FontWeight="Bold" FontStyle="Italic" FontFamily="Cambria" Foreground="Black" Background="#FF64E5FF" Height="30" Width="146"/>
+        <Image HorizontalAlignment="Left" Height="183" Margin="520,96,0,0" VerticalAlignment="Top" Width="171" Source="/Cuore_real.PNG"/>
     </Grid>
 </Window>

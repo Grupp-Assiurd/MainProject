@@ -7,7 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Cuore.PNG" />
+    <None Remove="Cuore_real.PNG" />
+    <None Remove="Sfondo.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CardioLibrary\CardioLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Cuore.PNG" />
+    <Resource Include="Cuore_real.PNG" />
+    <Resource Include="Sfondo.PNG" />
   </ItemGroup>
 
 </Project>
