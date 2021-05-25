@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="SpesaEnergetica" Height="450" Width="800">
     <Grid>
-        
+        <RadioButton x:Name="rdb_camminata" Content="Camminata" HorizontalAlignment="Left" Margin="81,116,0,0" VerticalAlignment="Top" />
+        <RadioButton x:Name="rdb_corsa" Content="Corsa" HorizontalAlignment="Left" Margin="81,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="scegli il tipo di attività" HorizontalAlignment="Left" Margin="81,79,0,0" VerticalAlignment="Top"/>
+        <Label Content="quanti kilometri hai fatto?" HorizontalAlignment="Left" Margin="254,79,0,0" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="txt_Km" HorizontalAlignment="Left" Margin="267,123,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Inserisci il tuo peso" HorizontalAlignment="Left" Margin="476,79,0,0" VerticalAlignment="Top" Width="112"/>
+        <TextBox x:Name="txt_peso" HorizontalAlignment="Left" Margin="489,123,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_risultato" Content="" HorizontalAlignment="Left" Margin="327,188,0,0" VerticalAlignment="Top" Width="103" RenderTransformOrigin="0.88,0.594"/>
+        <Button x:Name="btn_calcola" Content="calcola" HorizontalAlignment="Left" Margin="549,188,0,0" VerticalAlignment="Top" Click="btn_calcola_Click"/>
+        <Label Content="La tua spesa energetica è:" HorizontalAlignment="Left" Margin="169,188,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

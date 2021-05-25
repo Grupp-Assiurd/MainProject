@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using CardioLibrary;
 
 namespace Cardio_fit_WPF
 {
@@ -20,6 +21,11 @@ namespace Cardio_fit_WPF
         public VariabilitaBattiti()
         {
             InitializeComponent();
+        }
+
+        private void Btn_MostraVariabiltà_Click(object sender, RoutedEventArgs e)
+        {
+            Lbl_risultatoVariabiltà.Content = DataCardio.Variabilità() + "ms";
         }
     }
 }
