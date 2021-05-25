@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MediaBatGiornaliera" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="la media dei battiti giornalieri è:" HorizontalAlignment="Left" Margin="113,156,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_RisultatoMedia" Content="" HorizontalAlignment="Left" Margin="312,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.076,0.579" Width="49">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.957"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="btn_MostraMedia" Content="mostra media" HorizontalAlignment="Left" Margin="420,159,0,0" VerticalAlignment="Top" Click="btn_MostraMedia_Click"/>
+
     </Grid>
 </Window>

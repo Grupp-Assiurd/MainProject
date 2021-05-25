@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Cardio_fit_WPF/1.0.0": {
+        "dependencies": {
+          "CardioLibrary": "1.0.0"
+        },
+        "runtime": {
+          "Cardio_fit_WPF.dll": {}
+        }
+      },
+      "CardioLibrary/1.0.0": {
+        "runtime": {
+          "CardioLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cardio_fit_WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CardioLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

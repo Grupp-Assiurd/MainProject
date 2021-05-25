@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using CardioLibrary;
 
 namespace Cardio_fit_WPF
 {
@@ -20,6 +21,11 @@ namespace Cardio_fit_WPF
         public MediaBatGiornaliera()
         {
             InitializeComponent();
+        }
+
+        private void btn_MostraMedia_Click(object sender, RoutedEventArgs e)
+        {
+            lbl_RisultatoMedia.Content = DataCardio.LetturafileMediaGiornaliera();
         }
     }
 }
